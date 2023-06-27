@@ -7,7 +7,10 @@ setTimeout(() => {
     console.log(document.querySelectorAll(".card"))
     console.log(document.querySelectorAll(".fav"))
     console.log(document.querySelector(".card"))
-    console.log(document.getElementsByClassName("popular_game"))
-    console.log(document.getElementsByTagName("section"))
+    console.log(document.getElementsByClassName("popular_game"));
 
+    console.log(document.getElementsByTagName("section"));
+    document.title = "Spartans"
+
+    document.getElementById("fav_games").style.backgroundColor = "red";
 }, 1000)
