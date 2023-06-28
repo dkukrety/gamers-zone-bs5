@@ -28,6 +28,24 @@ function add() {
 
 }
 
+function sub() {
+    var results = parseInt(document.getElementById("a").value) - parseInt(document.getElementById("b").value);
+    document.getElementById("results").innerHTML = results;
+
+}
+
+function multiply() {
+    var results = parseInt(document.getElementById("a").value) * parseInt(document.getElementById("b").value);
+    document.getElementById("results").innerHTML = results;
+
+}
+
+function divide() {
+    var results = parseInt(document.getElementById("a").value) / parseInt(document.getElementById("b").value);
+    document.getElementById("results").innerHTML = results;
+
+}
+
 
 setTimeout(function () {
     // document.getElementById("c1").innerHTML = "<div> " + student1 + "</div>";
