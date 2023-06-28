@@ -12,9 +12,31 @@ console.log(job)
 console.log(designation)
 console.log(company)
 
+var a = 10;
+var b = 6;
+console.log(a + b)
+
+console.log(a - b)
+
+console.log(a * b)
+
+console.log(a / b)
+
+function add() {
+    var results = parseInt(document.getElementById("a").value) +
+        parseInt(document.getElementById("b").value);
+    document.getElementById("results").innerHTML = results;
+
+}
 
 
-setTimeout(() => {
+setTimeout(function () {
+    // document.getElementById("c1").innerHTML = "<div> " + student1 + "</div>";
+    document.getElementById("fav_games").style.backgroundColor = "red";
+}, 2000)
+
+
+// setTimeout(() => {
     // console.log(document.getElementById("fav_games"))
     // console.log(document.getElementById("popular_games"))
     // console.log(document.querySelector(".fav"))
@@ -27,5 +49,5 @@ setTimeout(() => {
     // document.title = "Spartans"
 
     // document.getElementById("fav_games").style.backgroundColor = "red";
-}, 1000)
+// }, 1000)
 
