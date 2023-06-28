@@ -23,8 +23,7 @@ console.log(a * b)
 console.log(a / b)
 
 function add() {
-    var results = parseInt(document.getElementById("a").value) +
-        parseInt(document.getElementById("b").value);
+    var results = parseInt(document.getElementById("a").value) + parseInt(document.getElementById("b").value);
     document.getElementById("results").innerHTML = results;
 
 }
