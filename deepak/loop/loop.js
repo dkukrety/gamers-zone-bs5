@@ -611,3 +611,12 @@ for(let i = 0; i < posts.length ;i++)
 {
     console.log("user " + posts[i].id + " title is " + posts[i].title);
 }
+
+// printing prime numbers
+
+while(1)
+{
+    let num = parseInt(prompt("Please enter your number", ""));
+    if (num == 10) break;
+
+}
