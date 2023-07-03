@@ -614,9 +614,11 @@ for(let i = 0; i < posts.length ;i++)
 
 // printing prime numbers
 
-while(1)
+let i = 0;
+while(i < 10)
 {
     let num = parseInt(prompt("Please enter your number", ""));
     if (num == 10) break;
+    i++;
 
 }
