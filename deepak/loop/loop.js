@@ -607,10 +607,10 @@ var posts = [
     }
 ];
 
-for(let i = 0; i < posts.length ;i++)
+/*for(let i = 0; i < posts.length ;i++)
 {
     console.log("user " + posts[i].id + " title is " + posts[i].title);
-}
+}*/
 
 // printing prime numbers
 
@@ -624,10 +624,35 @@ while(i < 10)
 }
 */
 
-let input = parseInt(prompt("Please enter your number", ""));
+/*let input = parseInt(prompt("Please enter your number", ""));
 var sum = 0;
 do {
  sum = sum + input;
 }while(input--);
 console.log("sum --> " + sum);
+*/
+var usersData;
+
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json())
+  .then(data => {
+    // Store the fetched JSON data in a variable
+    usersData = data;
+
+    // Display the data in the console
+    console.log(usersData);
+  })
+  .catch(error => {
+    console.log('Error:', error);
+  });
+
+for (key in usersData){
+    console.log(usersData[key].name);
+
+    for( address in usersData[key].address)
+    {
+        console.log(usersData[key].address[address]);
+    }
+}
+
 
