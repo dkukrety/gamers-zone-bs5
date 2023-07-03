@@ -614,7 +614,7 @@ for(let i = 0; i < posts.length ;i++)
 
 // printing prime numbers
 
-let i = 0;
+/*let i = 0;
 while(i < 10)
 {
     let num = parseInt(prompt("Please enter your number", ""));
@@ -622,3 +622,12 @@ while(i < 10)
     i++;
 
 }
+*/
+
+let input = parseInt(prompt("Please enter your number", ""));
+var sum = 0;
+do {
+ sum = sum + input;
+}while(input--);
+console.log("sum --> " + sum);
+
