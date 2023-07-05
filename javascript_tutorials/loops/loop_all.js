@@ -6,6 +6,18 @@ let levels = [
     { level: 4, name: "expert" }
 ]
 
+for (let level of levels) {
+    // console.log(levels[level])
+    for (let temp in level) {
+        console.log(level[temp])
+    }
+}
+
+
+// for (let level of levels) {
+//     console.log(level)
+// }
+
 // for (let level = 0; level < levels.length; level = level + 1) {
 //     console.log(levels[level].name)
 // }
@@ -22,8 +34,8 @@ let levels = [
 //     temp2++;
 // } while (temp2 < levels.length);
 
-let games = [
-    "Call of Duty",
-    "Fortnite",
-    "Assasians Creed"
-]
+// let games = [
+//     "Call of Duty",
+//     "Fortnite",
+//     "Assasians Creed"
+// ]
