@@ -9,3 +9,6 @@ function Person(name, age) {
 }
 
 const person2 = new Person("Rakesh", 22);
+
+person2.name;
+person2.greet()

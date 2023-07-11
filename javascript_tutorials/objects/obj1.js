@@ -64,7 +64,8 @@ console.log(gamersZone.name);  // Gamers Zone
 
 
 const obj1 = { prop: "value" };
-const obj2 = { prop: "value" };
+// const obj2 = { prop: "value" };
+const obj2 = obj1;
 console.log(Object.is(obj1, obj2));  // false
 
 // seal
