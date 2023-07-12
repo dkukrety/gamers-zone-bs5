@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Element Selector */
+      p {
+        color: blue;
+      }
+
+      /* Class Selector */
+      .my-class {
+        font-weight: bold;
+      }
+
+      /* ID Selector */
+      #my-id {
+        background-color: yellow;
+      }
+
+      /* Attribute Selector */
+      [type="submit"] {
+        background-color: green;
+      }
+
+      [href*="example"] {
+        color: red;
+      }
+
+      /* Descendant Selector */
+      .parent-element .child-element {
+        text-decoration: underline;
+      }
+
+      /* Child Selector */
+      .parent-element > .child-element {
+        font-size: 20px;
+        background-color: aqua;
+      }
+
+      /* Adjacent Sibling Selector */
+      .element + .sibling-element {
+        font-style: italic;
+      }
+
+      /* General Sibling Selector */
+      .element ~ .sibling-element {
+        border: 1px solid black;
+      }
+
+      /* Pseudo-classes */
+      a:hover {
+        background-color: lightblue;
+      }
+
+      input:focus {
+        outline: 2px solid orange;
+      }
+
+      /* Pseudo-elements */
+      p::first-letter {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      p::first-line {
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+
+    <p class="my-class">This paragraph has a custom class.</p>
+
+    <p id="my-id">This paragraph has a custom ID.</p>
+
+    <input type="submit" value="Submit" />
+
+    <a href="https://example.com">Visit example.com</a>
+
+    <div class="parent-element">
+      <div class="child-element">Child element 1</div>
+      <div class="child-element">Child element 2</div>
+    </div>
+
+    <div class="parent-element">
+      <span class="child-element">Nested span</span>
+    </div>
+
+    <span class="element">Element 1</span>
+    <span class="sibling-element">Element 2</span>
+
+    <span class="element">Element 3</span>
+    <span class="sibling-element">Element 4</span>
+
+    <p>This is a <a href="#">link</a> inside a paragraph.</p>
+
+    <input type="text" />
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+      <span>ullamcorper</span> neque.
+    </p>
+  </body>
+</html>
