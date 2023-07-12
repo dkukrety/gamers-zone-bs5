@@ -46,7 +46,12 @@ console.log(values);
 
 const entries = Object.entries(gamersZone);
 console.log(entries);
-// [["name", "Gamers Zone"], ["location", "City X"], ["games", ["Game A", "Game B", "Game C"]],
+// 
+// [
+//     ["name", "Gamers Zone"], 
+//     ["location", "City X"], 
+//     ["games", ["Game A", "Game B", "Game C"]
+// ],
 //  ["isOpen", true], ["showLocation", ƒ], ["showGames", ƒ], ["toggleOpen", ƒ]]
 
 console.log(gamersZone.hasOwnProperty("name"));  // true
@@ -64,8 +69,8 @@ console.log(gamersZone.name);  // Gamers Zone
 
 
 const obj1 = { prop: "value" };
-// const obj2 = { prop: "value" };
-const obj2 = obj1;
+const obj2 = { prop: "value" };
+// const obj2 = obj1;
 console.log(Object.is(obj1, obj2));  // false
 
 // seal
