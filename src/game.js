@@ -18,4 +18,8 @@ class Game {
     }
 }
 
+// let game = new Game("Call of Duty", "Action", "PS5", new Date(), "This is the Game")
+// game.displayInfo();
+// let game2 = new Game("fortnite", "Action", "PS5", new Date(), "This is the Game")
+// game2.displayInfo();
 export default Game;
