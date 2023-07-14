@@ -60,8 +60,6 @@ const DataCachingMixin = {
 };
 
 
-
-
 // Class using mixins
 class DataService {
     // Use the AuthenticationMixin
