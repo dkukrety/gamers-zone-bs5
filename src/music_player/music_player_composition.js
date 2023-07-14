@@ -35,6 +35,11 @@ class Playlist {
             }
         })
     }
+    playParticularTrack(trackNo) {
+        if (this.tracks[trackNo - 1]) {
+            this.tracks[trackNo - 1].play()
+        }
+    }
 }
 
 const track1 = new Track('Song 1', 'Artist 1', '3:45');
@@ -47,3 +52,4 @@ playlist.addTrack(track2);
 playlist.makeFav(track2)
 playlist.addTrack(track3);
 playlist.playFav();
+playlist.playParticularTrack(3)
