@@ -21,6 +21,13 @@ class ShippingContainer {
             console.log(`Container ${this.containerNumber} is already full.`);
         }
     }
+
+    removeCargoes() {
+
+        if (this.capacity.length > 0) {
+            let itemRemoved = this.cargoes.pop();
+        }
+    }
 }
 
 class ShippingYard {
