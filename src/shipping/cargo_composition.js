@@ -45,7 +45,9 @@ class ShippingYard {
 const yard = new ShippingYard();
 
 const container1 = new ShippingContainer('C001', 5);
-container1.addCargo(new Cargo('Electronics', 200));
+
+let cargo1 = new Cargo('Electronics', 200);
+container1.addCargo(cargo1);
 container1.addCargo(new Cargo('Clothing', 100));
 yard.addContainer(container1);
 
