@@ -1,6 +1,7 @@
 // Smaller, focused objects
 class Cargo {
     constructor(description, weight) {
+        console.log(`Cargo created ${description}`)
         this.description = description;
         this.weight = weight;
     }
@@ -8,6 +9,7 @@ class Cargo {
 
 class ShippingContainer {
     constructor(containerNumber, capacity) {
+        console.log(`ShippingContainer created ${containerNumber}`)
         this.containerNumber = containerNumber;
         this.capacity = capacity;
         this.cargoes = [];
@@ -32,6 +34,7 @@ class ShippingContainer {
 
 class ShippingYard {
     constructor() {
+        console.log(`ShippingYard created ${containerNumber}`)
         this.containers = [];
     }
 
@@ -54,3 +57,4 @@ yard.addContainer(container1);
 const container2 = new ShippingContainer('C002', 3);
 container2.addCargo(new Cargo('Furniture', 500));
 yard.addContainer(container2);
+
