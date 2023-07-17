@@ -27,13 +27,13 @@ game[test.temp] = true;
 
 let game_input = prompt("Which game to buy?", "GOT");
 
-let game2 = {
-    [game_input]: true, // the name of the property is taken from the variable game_input
-};
+// let game2 = {
+    // [game_input]: true, // the name of the property is taken from the variable game_input
+// };
 
-console.log(game2.GOT); // true if game_input="GOT"
+// console.log(game2.GOT); // true if game_input="GOT"
 
-console.log("GOT" in game2); // true, game2.GOT exists
+// console.log("GOT" in game2); // true, game2.GOT exists
 
 function createGame(name, price) {
     return {
@@ -44,5 +44,7 @@ function createGame(name, price) {
 }
 
 let res = createGame("Manoj", 200000)
+console.log(res);
+
 
 
